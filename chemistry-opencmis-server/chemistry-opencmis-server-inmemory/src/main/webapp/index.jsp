@@ -47,7 +47,7 @@
 %>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" type="text/css" href="css/opencmis.css"/>
     <title>Apache Chemistry OpenCMIS-InMemory Server</title>
 
