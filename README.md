@@ -8,9 +8,8 @@
 
 ## Breaking Changes
 
-- upgrade to build environment and target `jdk8`
+- change build and runtime to `java 17`
 - remove `OpenCMIS - android` and `OpenCMIS - workbench`
-- upgrade java runtime to java 17
 - change `ThresholdOutputStream` encryption algorithm from `AES/CTR/PKCS5Padding` to `AES/CTR/NoPadding` 
 
 ## [License](./LICENSE)
