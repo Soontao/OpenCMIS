@@ -32,11 +32,20 @@
 
     <artifactId>chemistry-opencmis-commons-api</artifactId>
     <name>OpenCMIS Commons API</name>
+
     <packaging>jar</packaging>
 
     <properties>
         <parentBasedir>../../</parentBasedir>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>jakarta.xml.ws</groupId>
+            <artifactId>jakarta.xml.ws-api</artifactId>
+            <version>${ws.version}</version>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>

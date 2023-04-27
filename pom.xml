@@ -122,8 +122,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compile.source>1.8</maven.compile.source>
-        <maven.compile.target>1.8</maven.compile.target>
+        <maven.compile.source>17</maven.compile.source>
+        <maven.compile.target>17</maven.compile.target>
         <docs.start.url>https://chemistry.apache.org/java/opencmis.html</docs.start.url>
         <docs.download.directory>${project.build.directory}/downloaded-site</docs.download.directory>
         <!--
@@ -146,6 +146,8 @@
         <site.staging.url>${site.staging.protocol}://${site.staging.host}${site.staging.folder}</site.staging.url>
         <parentBasedir>${project.basedir}</parentBasedir>
 
+        <ws.version>2.3.3</ws.version>
+        <jws-api.version>2.1.0</jws-api.version>
         <woodstox.version>4.4.1</woodstox.version>
         <osgi.version>6.0.0</osgi.version>
         <felix.plugin.version>5.1.8</felix.plugin.version>

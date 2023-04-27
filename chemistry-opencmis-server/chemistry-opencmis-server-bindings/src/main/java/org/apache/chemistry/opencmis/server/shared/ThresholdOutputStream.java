@@ -58,7 +58,7 @@ public class ThresholdOutputStream extends TempStoreOutputStream {
 
     private static final String ALGORITHM = "AES";
     private static final String MODE = "CTR";
-    private static final String PADDING = "PKCS5Padding";
+    private static final String PADDING = "NoPadding";
     private static final String TRANSFORMATION = ALGORITHM + '/' + MODE + '/' + PADDING;
     private static final int KEY_SIZE = 128;
 
