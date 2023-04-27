@@ -6,9 +6,11 @@
 
 > [README of apache OpenCMIS is here](./README.Apache.txt)
 
-## Breaking Change
+## Breaking Changes
 
 - upgrade to build environment and target `jdk8`
 - remove `OpenCMIS - android` and `OpenCMIS - workbench`
+- upgrade java runtime to java 17
+- change `ThresholdOutputStream` encryption algorithm from `AES/CTR/PKCS5Padding` to `AES/CTR/NoPadding` 
 
 ## [License](./LICENSE)
