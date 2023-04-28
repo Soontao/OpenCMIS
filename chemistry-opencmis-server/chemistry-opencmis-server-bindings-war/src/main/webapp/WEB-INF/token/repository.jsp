@@ -24,7 +24,7 @@
 <title>Repository</title>
 </head>
 <body>
-	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
 	<script type="text/javascript">
 		var appInfo = getAppInfo();
 		var appDomain = appInfo[0];
