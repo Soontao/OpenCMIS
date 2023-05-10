@@ -216,15 +216,15 @@
     </tr>
     <tr>
         <td>Java version</td>
-        <%
-            out.println("<td>" + System.getProperty("java.version") + "</td>");
-        %>
+        <td><%= System.getProperty("java.version") %></td>
+    </tr>
+    <tr>
+        <td>Server info</td>
+        <td><%= application.getServerInfo() %></td>
     </tr>
     <tr>
         <td>Operation system</td>
-        <%
-            out.println("<td>" + System.getProperty("os.name") + "</td>");
-        %>
+        <td><%= System.getProperty("os.name") %></td>
     </tr>
 
 </table>
