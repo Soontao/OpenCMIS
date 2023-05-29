@@ -150,7 +150,7 @@
         <jws-api.version>2.1.0</jws-api.version>
         <woodstox.version>4.4.1</woodstox.version>
         <osgi.version>6.0.0</osgi.version>
-        <felix.plugin.version>5.1.8</felix.plugin.version>
+        <felix.plugin.version>5.1.9</felix.plugin.version>
         <junit.version>4.13.2</junit.version>
         <surefire.version>2.19.1</surefire.version>
         <failsafe.version>3.1.0</failsafe.version>
