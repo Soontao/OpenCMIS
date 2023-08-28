@@ -313,7 +313,7 @@
     <a href="http://www.oasis-open.org/committees/cmis"> CMIS page at OASIS</a>
 </p>
 <p>
-    <a href="https://github.tools.sap/oss-security/OpenCMIS">SAP Self Maintained CMIS Repo with Security Patch</a>
+    <a href="https://github.com/Soontao/OpenCMIS">OpenCMIS Repo with Security Patch</a>
 </p>
 
 <hr/>
