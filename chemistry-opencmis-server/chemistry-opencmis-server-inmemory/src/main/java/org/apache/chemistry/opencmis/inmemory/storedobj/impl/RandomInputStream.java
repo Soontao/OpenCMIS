@@ -20,11 +20,12 @@ package org.apache.chemistry.opencmis.inmemory.storedobj.impl;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.security.SecureRandom;
 import java.util.Random;
 
 public class RandomInputStream extends InputStream {
 
-    private Random random = new Random();
+    private Random random = new SecureRandom();
     private boolean isClosed = false;
     private long size;
     private long bytesRead;
