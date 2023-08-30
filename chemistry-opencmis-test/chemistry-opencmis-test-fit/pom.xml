@@ -159,7 +159,7 @@
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-jasper</artifactId>
-            <version>8.5.93</version>
+            <version>10.1.13</version>
             <scope>test</scope>
         </dependency>
         <dependency>
