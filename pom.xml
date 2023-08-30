@@ -59,12 +59,6 @@
         </license>
     </licenses>
 
-    <scm>
-        <connection>scm:svn:https://svn.apache.org/repos/asf/chemistry/opencmis/tags/chemistry-opencmis-1.1.0-RC1</connection>
-        <developerConnection>scm:svn:https://svn.apache.org/repos/asf/chemistry/opencmis/tags/chemistry-opencmis-1.1.0-RC1</developerConnection>
-        <url>https://svn.apache.org/viewvc/chemistry/opencmis/tags/chemistry-opencmis-1.1.0-RC1</url>
-    </scm>
-
     <distributionManagement>
         <site>
             <id>${site.staging.id}</id>
