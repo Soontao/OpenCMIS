@@ -35,7 +35,6 @@
 
     <properties>
         <parentBasedir>../../</parentBasedir>
-        <tomcat.version>7.0.109</tomcat.version>
         <overlay.groupId />
         <overlay.artifactId />
         <factory.class />
@@ -91,7 +90,7 @@
                     <encoding>UTF-8</encoding>
                     <reuseForks>true</reuseForks>
                     <forkCount>1</forkCount>
-                    <forkedProcessTimeoutInSeconds>1800</forkedProcessTimeoutInSeconds>
+                    <forkedProcessTimeoutInSeconds>600</forkedProcessTimeoutInSeconds>
                     <argLine>-Xmx2048m</argLine>
                     <systemPropertyVariables>
                         <systemProperty>
@@ -160,13 +159,13 @@
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-jasper</artifactId>
-            <version>${tomcat.version}</version>
+            <version>8.5.93</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-logging-juli</artifactId>
-            <version>${tomcat.version}</version>
+            <version>8.5.2</version>
             <scope>test</scope>
         </dependency>
         <dependency>
