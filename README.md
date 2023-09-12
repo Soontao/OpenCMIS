@@ -9,7 +9,7 @@
 ## Breaking Changes
 
 - change build and runtime to `java 17`, as a consequence, must use `tomcat 9` from now
-- remove `OpenCMIS - android` and `OpenCMIS - workbench`
+- remove `OpenCMIS - android`
 - change `ThresholdOutputStream` encryption algorithm from `AES/CTR/PKCS5Padding` to `AES/CTR/NoPadding` 
 - remove web ui for in-mem server
 
