@@ -73,9 +73,13 @@ th  {
     padding: 2px 4px 2px 4px;
     background: #f0f0f0;
     text-align: center;
+    width: 15rem;
+    font-size: 0.8rem;
 }
 
 td  {
     border: 1px solid #ccc;
     padding: 3px 4px 3px 4px;
+    width: 15rem;
+    font-size: 0.7rem;
 }

@@ -145,14 +145,6 @@
     not perform any kind of secure authentication.
 </p>
 
-<h2>Web Interface</h2>
-<p>
-    The <a href="web">OpenCMIS web interface</a> is simple web interface to access
-    the repository. Please note that this is not the usual way to access the repository.
-    Usually you will use a client application supporting the CMIS specification like
-    the CMIS workbench.
-</p>
-
 <h2>NOTICE</h2>
 <p>
     This is an unsupported and experimental service. Any use is at your own risk.

@@ -78,36 +78,38 @@ OpenCMISConnector.prototype.cmisReceiver = function(e) {
 		return;
 	}
 
-	if (e.data.substring(0, 6) == 'token:') {
+	if (e.data.token) {
 		// response of a token request, repository sends token
 
 		if (this.tokenCallbacks.length > 0) {
 			// at least one callback is waiting for a token
 
 			// extract token
-			var token = e.data.substring(6);
+			var token = e.data.token
 
 			// trigger callback
 			this.tokenCallbacks.pop()(token);
 		}
-	} else if (e.data.substring(0, 7) == 'appkey:') {
+	} else if (e.data.appkey) {
 		if (this.loginCallback != null) {
 			var callback = this.loginCallback;
 			this.loginCallback = null;
 
-			this.appKey = e.data.substring(7, 67);
+			this.appKey = e.data.appkey
 			this.loginKey = '';
 
 			callback(true);
 		}
-	} else if (e.data.substring(0, 9) == 'loginkey:') {
+	} else if (e.data.loginkey) {
 		if (this.loginCallback != null) {
 			var callback = this.loginCallback;
 			this.loginCallback = null;
 
-			this.loginKey = e.data.substring(9, 69);
+			var parts =
 
-			var loginUrl = e.data.substring(70);
+			this.loginKey = e.data.loginkey
+
+			var loginUrl = e.data.url
 
 			var expires = new Date();
 			expires.setTime(expires.getTime() + 3600);

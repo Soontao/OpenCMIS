@@ -52,7 +52,7 @@
 
 				if (tokens.length > 0) {
 					// we have a least one token in stock -> remove one and send it
-					e.source.postMessage('token:' + tokens.pop(), e.origin);
+					e.source.postMessage({ token: tokens.pop() }, e.origin);
 				} else {
 					// we are out of tokens -> ask the server for another batch
 					requestTokens(e, appKey);
@@ -76,10 +76,9 @@
 				},
 				success : function(data) {
 					if (data.ok == 1) {
-						e.source.postMessage('appkey:' + data.key, e.origin);
+						e.source.postMessage({ appkey: data.key }, e.origin);
 					} else {
-						e.source.postMessage('loginkey:' + data.key + ":"
-								+ data.url, e.origin);
+						e.source.postMessage({ loginkey: data.key, url: data.url}, e.origin);
 					}
 				},
 				error : function(msg) {
