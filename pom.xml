@@ -111,6 +111,7 @@
         <module>chemistry-opencmis-test/chemistry-opencmis-test-fit</module>
         <module>chemistry-opencmis-test/chemistry-opencmis-test-tck</module>
         <module>chemistry-opencmis-osgi/chemistry-opencmis-osgi-client</module>
+        <module>chemistry-opencmis-workbench</module>
         <module>chemistry-opencmis-dist</module>
     </modules>
 
