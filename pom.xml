@@ -151,7 +151,7 @@
         <failsafe.version>3.1.2</failsafe.version>
         <jacoco.version>0.8.11</jacoco.version>
         <slf4j.version>2.0.9</slf4j.version>
-        <log4j.version>2.20.0</log4j.version>
+        <log4j.version>2.21.0</log4j.version>
         <apacheclient.version>4.5.14</apacheclient.version>
         <cxf.version>3.6.2</cxf.version>
         <okhttp.version>4.11.0</okhttp.version>
