@@ -154,7 +154,7 @@
         <log4j.version>2.21.0</log4j.version>
         <apacheclient.version>4.5.14</apacheclient.version>
         <cxf.version>3.6.2</cxf.version>
-        <okhttp.version>4.11.0</okhttp.version>
+        <okhttp.version>4.12.0</okhttp.version>
     </properties>
 
     <build>
