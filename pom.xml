@@ -148,7 +148,7 @@
         <felix.plugin.version>5.1.9</felix.plugin.version>
         <junit.version>4.13.2</junit.version>
         <surefire.version>2.19.1</surefire.version>
-        <failsafe.version>3.2.2</failsafe.version>
+        <failsafe.version>3.2.3</failsafe.version>
         <jacoco.version>0.8.11</jacoco.version>
         <slf4j.version>2.0.9</slf4j.version>
         <log4j.version>2.22.0</log4j.version>
