@@ -4,7 +4,7 @@ WORKDIR /build
 
 COPY . .
 
-RUN mvn clean package
+RUN mvn clean install package
 
 FROM tomcat:9-jdk21
 
