@@ -3,8 +3,8 @@ FROM maven:3-eclipse-temurin-21 AS builder
 WORKDIR /build
 
 COPY . .
-
-RUN mvn clean install package
+RUN mvn install
+RUN mvn package
 
 FROM tomcat:9-jdk21
 
