@@ -1,0 +1,32 @@
+name: Build Docker Image
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set up Docker
+        uses: docker/setup-docker@v2
+
+      - name: Build Docker Image
+        working-directory: chemistry-opencmis-server/chemistry-opencmis-server-inmemory
+        run: |
+          docker build -t opencmis-inmemory-server .
+
+#      - name: Log in to Docker Hub
+#        if: success()
+#        run: echo ${{ secrets.DOCKERHUB_TOKEN }} | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
+#
+#      - name: Push Docker Image
+#        if: success()
+#        run: |
+#          docker tag chemistry-opencmis-server-inmemory ${{ secrets.DOCKERHUB_USERNAME }}/chemistry-opencmis-server-inmemory
+#          docker push ${{ secrets.DOCKERHUB_USERNAME }}/chemistry-opencmis-server-inmemory
