@@ -1,7 +1,7 @@
 FROM maven:3-eclipse-temurin-21 AS builder
 
 WORKDIR /build
-COPY . .
+COPY ../.. .
 RUN mvn -ntp --batch-mode --update-snapshots install package
 
 FROM tomcat:9-jdk21
