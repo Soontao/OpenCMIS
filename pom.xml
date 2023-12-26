@@ -141,7 +141,7 @@
         <site.staging.url>${site.staging.protocol}://${site.staging.host}${site.staging.folder}</site.staging.url>
         <parentBasedir>${project.basedir}</parentBasedir>
 
-        <ws.version>2.3.3</ws.version>
+        <ws.version>4.0.1</ws.version>
         <jws-api.version>2.1.0</jws-api.version>
         <woodstox.version>4.4.1</woodstox.version>
         <osgi.version>6.0.0</osgi.version>
