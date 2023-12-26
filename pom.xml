@@ -24,7 +24,7 @@
     <parent>
         <groupId>org.apache</groupId>
         <artifactId>apache</artifactId>
-        <version>30</version>
+        <version>31</version>
     </parent>
 
     <!-- Project Information -->
@@ -111,6 +111,7 @@
         <module>chemistry-opencmis-test/chemistry-opencmis-test-fit</module>
         <module>chemistry-opencmis-test/chemistry-opencmis-test-tck</module>
         <module>chemistry-opencmis-osgi/chemistry-opencmis-osgi-client</module>
+        <module>chemistry-opencmis-workbench</module>
         <module>chemistry-opencmis-dist</module>
     </modules>
 
@@ -147,13 +148,13 @@
         <felix.plugin.version>5.1.9</felix.plugin.version>
         <junit.version>4.13.2</junit.version>
         <surefire.version>2.19.1</surefire.version>
-        <failsafe.version>3.1.2</failsafe.version>
-        <jacoco.version>0.8.10</jacoco.version>
+        <failsafe.version>3.2.3</failsafe.version>
+        <jacoco.version>0.8.11</jacoco.version>
         <slf4j.version>2.0.9</slf4j.version>
-        <log4j.version>2.20.0</log4j.version>
+        <log4j.version>2.22.0</log4j.version>
         <apacheclient.version>4.5.14</apacheclient.version>
-        <cxf.version>3.6.1</cxf.version>
-        <okhttp.version>4.11.0</okhttp.version>
+        <cxf.version>3.6.2</cxf.version>
+        <okhttp.version>4.12.0</okhttp.version>
     </properties>
 
     <build>
@@ -187,7 +188,7 @@
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>exec-maven-plugin</artifactId>
-                    <version>3.1.0</version>
+                    <version>3.1.1</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -354,7 +355,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
-                <version>3.3.0</version>
+                <version>3.3.1</version>
                 <configuration>
                     <configLocation>src/main/resources/checkstyle.xml</configLocation>
                     <suppressionsLocation>src/main/resources/suppressions.xml</suppressionsLocation>
@@ -461,7 +462,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <version>3.6.0</version>
+                <version>3.6.3</version>
                 <configuration>
                     <tags>
                         <tag>
@@ -504,7 +505,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-report-plugin</artifactId>
-                <version>3.1.2</version>
+                <version>3.2.3</version>
                 <configuration>
                     <aggregate>true</aggregate>
                     <reportsDirectories>
@@ -516,12 +517,12 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jxr-plugin</artifactId>
-                <version>3.3.0</version>
+                <version>3.3.1</version>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-project-info-reports-plugin</artifactId>
-                <version>3.4.5</version>
+                <version>3.5.0</version>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
