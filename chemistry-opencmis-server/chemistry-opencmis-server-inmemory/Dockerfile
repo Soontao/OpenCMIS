@@ -1,5 +1,5 @@
 # Use the official Tomcat 9 image as the base image
-FROM tomcat:9
+FROM tomcat:9-jdk21
 
 # Set the working directory to the Tomcat webapps directory
 WORKDIR /usr/local/tomcat/webapps/
