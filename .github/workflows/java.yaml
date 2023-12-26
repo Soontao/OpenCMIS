@@ -12,6 +12,9 @@ on:
 
 jobs:
   build:
+    strategy:
+      matrix:
+        java_version: ['17', '21']
     runs-on: ubuntu-latest
     
     steps:
@@ -20,7 +23,7 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v3
         with:
-          java-version: "17"
+          java-version: ${{ matrix.java_version }}
           distribution: "temurin"
 
       - name: Build with Maven
