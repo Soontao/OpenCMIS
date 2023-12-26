@@ -1,5 +1,11 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "automerge": true,
-  "prConcurrentLimit": 5
+  "prConcurrentLimit": 5,
+  "major": {
+    "enabled": false
+  },
+  "minor": {
+    "enabled": false
+  }
 }
