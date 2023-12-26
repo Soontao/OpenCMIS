@@ -142,7 +142,7 @@
         <parentBasedir>${project.basedir}</parentBasedir>
 
         <ws.version>2.3.3</ws.version>
-        <jws-api.version>2.1.0</jws-api.version>
+        <jws-api.version>3.0.0</jws-api.version>
         <woodstox.version>4.4.1</woodstox.version>
         <osgi.version>6.0.0</osgi.version>
         <felix.plugin.version>5.1.9</felix.plugin.version>
