@@ -1,5 +1,4 @@
-# Use the official Tomcat 9 image as the base image
-FROM maven:eclipse-temurin-21 AS builder
+FROM maven:3-eclipse-temurin-21 AS builder
 
 WORKDIR /build
 
@@ -9,7 +8,6 @@ RUN mvn clean package
 
 FROM tomcat:9-jdk21
 
-# Set the working directory to the Tomcat webapps directory
 WORKDIR /usr/local/tomcat/webapps/
 
 # Remove the default ROOT application
